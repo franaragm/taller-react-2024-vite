@@ -1,0 +1,17 @@
+@use '../../styles/_vars' as v;
+
+.home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 2rem;
+  }
+  
+  .title {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    color: v.$primary-color;
+  }
+  

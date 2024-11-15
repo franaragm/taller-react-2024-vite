@@ -1,0 +1,9 @@
+@use 'vars' as v;
+@use 'mixins' as m;
+
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  background-color: #f8f9fa;
+  color: v.$secondary-color;
+}

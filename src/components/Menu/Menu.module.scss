@@ -1,0 +1,19 @@
+@use '../../styles/_vars' as v;
+
+.menu {
+    display: flex;
+    gap: 1rem;
+    background-color: v.$primary-color;
+    padding: 1rem;
+    justify-content: center;
+}
+
+.link {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
