@@ -1,4 +1,4 @@
-@use '../../styles/_vars' as v;
+@use '@styles/vars' as v;
 
 .button {
     background-color: v.$primary-color;
@@ -9,6 +9,7 @@
     cursor: pointer;
 
     &:hover {
-        background-color: darken(v.$primary-color, 10%);
+        background-color: v.$primary-color;
+        filter: brightness(0.8);
     }
 }
