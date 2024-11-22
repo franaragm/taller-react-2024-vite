@@ -1,17 +1,36 @@
-@use '@styles/vars' as v;
+@use '@styles/vars'as v;
 
 .home {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 2rem;
+}
+
+.title {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  color: v.$primary-color;
+}
+
+.cardContainer {
+  display: grid;
+  gap: v.$card-gap;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  width: 90%;
+  margin: 0 auto; // Centrar el contenedor
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+
+  @media (max-width: 768px) {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); // Ajusta el mínimo en pantallas medianas
   }
-  
-  .title {
-    font-size: 2rem;
-    margin-bottom: 1.5rem;
-    color: v.$primary-color;
+
+  @media (max-width: 480px) {
+    grid-template-columns: repeat(1, 1fr); // 2 columnas en pantallas pequeñas
+    gap: 10px; // Reduce el espacio entre tarjetas
   }
-  
+}
