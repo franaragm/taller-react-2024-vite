@@ -1,0 +1,31 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "Alice",
+      "email": "alice@example.com"
+    },
+    {
+      "id": 2,
+      "name": "Bob",
+      "email": "bob@example.com"
+    },
+    {
+      "name": "Fran",
+      "email": "fran@example.com",
+      "id": 3
+    }
+  ],
+  "posts": [
+    {
+      "id": 1,
+      "title": "Hello World",
+      "content": "This is a test post."
+    },
+    {
+      "id": 2,
+      "title": "Another Post",
+      "content": "This is another test post."
+    }
+  ]
+}
